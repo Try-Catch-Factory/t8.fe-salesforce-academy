@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <header className=" bg-200 flex justify-between items-center p-4 text-white">
         <h1 className="text-xl font-bold text-950">Academia XYZ</h1>
-        <Button className="text-white border-purple" variant="outline">
+        <Button variant="outline" >
           Ir a mis cursos
         </Button>
         
@@ -37,7 +37,7 @@ export default function Home() {
           width="400"
         />
       </section>
-      <section className=" bg-600 text-white p-8 text-center">
+      <section className=" bg-600 h-screen text-white p-8 text-center">
         
           <div className="pt-20">
           <img
