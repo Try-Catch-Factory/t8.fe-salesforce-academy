@@ -11,14 +11,14 @@ import { AvatarImage, Avatar } from "@/components/ui/avatar"
 export default function Home() {
   return (
     <div>
-      <header className=" bg-white flex justify-between items-center p-4 text-white">
+      <header className=" bg-pyellow-200 flex justify-between items-center p-4 text-white">
         <h1 className="text-xl font-bold text-pyellow-950">Academia XYZ</h1>
         <Button variant="outline" >
           Ir a mis cursos
         </Button>
         
       </header>
-      <section className="bg-pyellow-200 h-screen text-center p-8 grid md:grid-cols-2 items-center">
+      <section className="bg-pyellow-200 h-screen text-center p-8 grid md:grid-cols-2 items-center overflow-auto">
         <div>
           <h2 className="text-4xl font-bold mb-4 text-pyellow-950">Domina un nuevo idioma <span className="text-pyellow-600">desde casa</span></h2>
           <p className="mb-6 text-black">Aprender un nuevo idioma nunca ha sido tan fácil y a tu propio ritmo.</p>
@@ -37,7 +37,7 @@ export default function Home() {
           width="400"
         />
       </section>
-      <section className=" bg-pyellow-600 h-screen text-white p-8 text-center">
+      <section className=" bg-pyellow-600 h-screen text-white p-8 text-center grid md:grid-cols-2 items-center">
         
           <div className="pt-20">
           <img
@@ -51,12 +51,21 @@ export default function Home() {
               }}
               width="250"
             />
+          </div>
+          <div>
             <h3 className="text-3xl font-bold">Profesores Nativos</h3>
             <p>¡Experimenta el aprendizaje de idiomas en su forma más pura y auténtica!</p>
           </div>
-          <br />
+          
       </section>
-      <section className="bg-pyellow-200 p-8 text-center  text-pyellow-950">
+      <div className="linear-gradient('bg-pyellow-600','bg-pyellow-200')"></div>
+      <section className="bg-pyellow-200 h-screen p-8 text-center  text-pyellow-950 grid md:grid-cols-2 items-center">
+          
+            
+          <div>
+            <h3 className="text-3xl font-bold">Inmersión total</h3>
+            <p>Descubre la cultura del idioma que quieres aprender, sus dialectos y conoce nuevos amigos.</p>
+          </div>
           <div className="pt-20 ">
             <img
               alt="Student group"
@@ -69,8 +78,6 @@ export default function Home() {
               }}
               width="340"
             />
-            <h3 className="text-3xl font-bold">Inmersión total</h3>
-            <p>Descubre la cultura del idioma que quieres aprender, sus dialectos y conoce nuevos amigos.</p>
           </div>
           </section>
       
