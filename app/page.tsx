@@ -10,73 +10,80 @@ import { AvatarImage, Avatar } from "@/components/ui/avatar"
 
 export default function Home() {
   return (
-    <div>
-      <header className=" bg-pyellow-200 flex justify-between items-center p-4 text-white">
-        <h1 className="text-xl font-bold text-pyellow-950">Academia XYZ</h1>
-        <Button variant="outline" >
+    <div className="">
+      <header className="px-10 sm:px-20 pt-5 bg-pyellow-200 flex justify-between items-center  text-white ">
+        <h1 className="text-sm sm:text-2xl font-bold text-pyellow-950">Academia XYZ</h1>
+        <Button className="text-sm sm:text-xl" variant="outline" >
           Ir a mis cursos
         </Button>
         
       </header>
-      <section className="bg-pyellow-200 h-screen text-center p-8 grid md:grid-cols-2 items-center overflow-auto">
+      <section className="bg-pyellow-200 p-10 sm:p-20 h-screen grid md:grid-cols-2 overflow-auto items-center">
         <div>
-          <h2 className="text-4xl font-bold mb-4 text-pyellow-950">Domina un nuevo idioma <span className="text-pyellow-600">desde casa</span></h2>
-          <p className="mb-6 text-black">Aprender un nuevo idioma nunca ha sido tan fácil y a tu propio ritmo.</p>
-          <Button className="mb-2">Explora</Button>
-          <p className="italic text-[#412007]">"¡Únete a nosotros y descubre un mundo de nuevas oportunidades!"</p>
+          <h1 className="text-4xl sm:text-6xl font-bold text-pyellow-950 text-balance">Domina un nuevo idioma <span className="text-pyellow-600">desde casa</span></h1>
+          <br/>
+          <p className="text-xl sm:text-3xl text-black ">Aprender un nuevo idioma nunca ha sido tan fácil y a tu propio ritmo.</p>
+          <br />
+          <div className="flex justify-center">
+          <Button className="text-sm sm:text-xl">Explora</Button>
+          </div>
         </div>
+        <div className="flex justify-end">
         <img
           alt="Language learning illustration"
-          className="mx-auto mb-4  bg-300"
-          height="200"
+          className=""
+          height="368"
           src="/img/laptop.png"
           style={{
-            aspectRatio: "250/250",
+            aspectRatio: "184/173",
             objectFit: "cover",
           }}
-          width="400"
+          width="346"
         />
+        </div>
       </section>
-      <section className=" bg-pyellow-600 h-screen text-white p-8 text-center grid md:grid-cols-2 items-center">
+      <section className="px-10 sm:px-20 bg-pyellow-600 h-screen text-white  grid md:grid-cols-2 items-center">
         
-          <div className="pt-20">
+          <div className="">
           <img
               alt="profile girl"
-              className="mx-auto mb-4 "
-              height="250"
+              className=""
+              height="368"
               src="/img/profe.png"
               style={{
-                aspectRatio: "250/275",
+                aspectRatio: "",
                 objectFit: "cover",
               }}
-              width="250"
+              width="405"
             />
           </div>
           <div>
-            <h3 className="text-3xl font-bold">Profesores Nativos</h3>
-            <p>¡Experimenta el aprendizaje de idiomas en su forma más pura y auténtica!</p>
+            <h2 className="text-3xl sm:text-6xl font-bold">Profesores Nativos</h2>
+            <br />
+            <p className="text-xl sm:text-3xl">¡Experimenta el aprendizaje de idiomas en su forma más pura y auténtica!</p>
           </div>
           
       </section>
       <div className="linear-gradient('bg-pyellow-600','bg-pyellow-200')"></div>
-      <section className="bg-pyellow-200 h-screen p-8 text-center  text-pyellow-950 grid md:grid-cols-2 items-center">
+      <section className="bg-pyellow-200 px-10 sm:px-20 h-screen text-pyellow-950 grid md:grid-cols-2 items-center">
           
             
           <div>
-            <h3 className="text-3xl font-bold">Inmersión total</h3>
-            <p>Descubre la cultura del idioma que quieres aprender, sus dialectos y conoce nuevos amigos.</p>
+            <h2 className="text-3xl sm:text-6xl font-bold">Inmersión total</h2>
+            <br />
+            <p className="text-xl sm:text-3xl">Descubre la cultura del idioma que quieres aprender, sus dialectos y conoce nuevos amigos.</p>
           </div>
-          <div className="pt-20 ">
+          <div className="flex justify-end">
             <img
               alt="Student group"
-              className="mx-auto mb-4"
-              height="300"
+              className=""
+              height="368"
               src="/img/inmersion.png"
               style={{
-                aspectRatio: "200/217",
+                aspectRatio: "23/25",
                 objectFit: "cover",
               }}
-              width="340"
+              width="400"
             />
           </div>
           </section>
