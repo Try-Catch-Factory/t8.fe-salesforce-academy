@@ -3,20 +3,48 @@
  * @see https://v0.dev/t/sQi3rgfyZLU
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-
+import React from "react";
+import ReactDOM from "react-dom";
 import { Button } from "@/components/ui/button"
 import { AvatarImage, Avatar } from "@/components/ui/avatar"
+import {Auth0Provider} from '@auth0/auth0-react'
 
+
+/*ReactDOM.render(
+  <React.StrictMode>
+    <Auth0Provider 
+      domain={process.env.REACT_APP_DOMAIN} 
+      clientId={process.env.REACT_APP_CLIENTID} 
+      redirectUri={window.location.origin}
+    >
+      <App />
+    </Auth0Provider>
+  </React.StrictMode>,
+  document.getElementById{"root"}
+);*/
+
+/*ReactDOM.render(
+  <React.StrictMode>
+    <Auth0Provider 
+      domain={process.env.DOMAIN} 
+      clientId={process.env.CLIENTID} 
+      redirectUri={window.location.origin}>
+      <App />
+    </Auth0Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);*/
 
 export default function Home() {
   return (
+    
     <div className="">
       <header className="px-10 sm:px-20 pt-5 bg-pyellow-200 flex justify-between items-center  text-white ">
         <h1 className="text-sm sm:text-2xl font-bold text-pyellow-950">Academia XYZ</h1>
         <Button className="text-sm sm:text-xl" variant="outline" >
           Ir a mis cursos
         </Button>
-        
+        <h2>domain=`${process.env.DOMAIN}`</h2>
       </header>
       <section className="bg-pyellow-200 p-10 sm:p-20 h-screen grid md:grid-cols-2 overflow-auto items-center">
         <div>
