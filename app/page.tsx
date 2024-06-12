@@ -3,6 +3,8 @@
  * @see https://v0.dev/t/sQi3rgfyZLU
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
+
+/*
 'use client'
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button"
@@ -95,3 +97,24 @@ export default function Home() {
     </div>
   )
 }
+*/
+
+'use client'
+import React from "react";
+import Header from "@/components/Header/Header";
+import HomeSection from "@/components/Sections/HomeSection";
+import NativeTeachersSection from "@/components/Sections/NativeTeachersSection";
+import TotalImmersionSection from "@/components/Sections/TotalImmersionSection";
+
+const Home: React.FC = () => {
+  return (
+    <div>
+      <Header />
+      <HomeSection />
+      <NativeTeachersSection />
+      <TotalImmersionSection />
+    </div>
+  );
+}
+
+export default Home;
