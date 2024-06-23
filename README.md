@@ -36,3 +36,76 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## para ver la landing page 
+
+#
+
+# Estructura del código
+Utilizando Screaming architecture
+```
+src/
+├── app/
+│   ├── api/
+│   │   └── auth/
+│   │       └── [auth0]/
+│   │           └── route.js
+│   ├── pages/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── authentication/
+│   ├── components/
+│   │   ├── LoginButton.tsx
+│   │   └── LogoutButton.tsx
+│   ├── hooks/
+│   │   ├── useUserAuth.ts
+│   │   └── UserProvider.tsx
+│   ├── pages/
+│   │   └── login.tsx
+│   ├── services/
+│   │   └── authService.ts
+│   ├── types/
+│   │   └── authTypes.ts
+│   └── utils/
+│       └── authUtils.ts
+├── components/
+│   ├── Header/
+│   │   └── Header.tsx
+│   ├── Sections/
+│   │   ├── HomeSection.tsx
+│   │   ├── NativeTeachersSection.tsx
+│   │   └── TotalImmersionSection.tsx
+│   └── ui/
+│       ├── avatar.tsx
+│       └── button.tsx
+├── hooks/
+│   └── useSharedHook.ts
+├── lib/
+├── node_modules/
+├── public/
+│   ├── img/
+│   │   ├── laptop.png
+│   │   ├── profe.png
+│   │   └── inmersion.png
+├── styles/
+│   ├── globals.css
+│   ├── landing.module.css
+├── types/
+│   └── globalTypes.ts
+├── utils/
+│   └── fetcher.ts
+├── .env
+├── .env.local
+├── .eslintrc.json
+├── .gitignore
+├── components.json
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+└── tsconfig.json
+
+```
