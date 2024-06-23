@@ -1,5 +1,4 @@
 'use client'
-import React from 'react';
 import LoginButton from '@/authentication/components/LoginButton';
 import LogoutButton from '@/authentication/components/LogoutButton';
 import { useUserContext } from '@/authentication/hooks/UserProvider';

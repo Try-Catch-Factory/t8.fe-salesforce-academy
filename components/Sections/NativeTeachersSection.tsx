@@ -1,5 +1,4 @@
 'use client'
-import React from "react";
 
 const NativeTeachersSection: React.FC = () => {
   return (
