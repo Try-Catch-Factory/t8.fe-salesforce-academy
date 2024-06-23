@@ -100,21 +100,25 @@ export default function Home() {
 */
 
 'use client'
-import React from "react";
-import Header from "@/components/Header/Header";
-import HomeSection from "@/components/Sections/HomeSection";
-import NativeTeachersSection from "@/components/Sections/NativeTeachersSection";
-import TotalImmersionSection from "@/components/Sections/TotalImmersionSection";
+import React from 'react';
+import Header from '@/components/Header/Header';
+import HomeSection from '@/components/Sections/HomeSection';
+import NativeTeachersSection from '@/components/Sections/NativeTeachersSection';
+import TotalImmersionSection from '@/components/Sections/TotalImmersionSection';
+import '@/app/globals.css';
+import { UserProvider } from '@/authentication/hooks/UserProvider';
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <Header />
-      <HomeSection />
-      <NativeTeachersSection />
-      <TotalImmersionSection />
-    </div>
+    <UserProvider>
+      <div className="">
+        <Header />
+        <HomeSection />
+        <NativeTeachersSection />
+        <TotalImmersionSection />
+      </div>
+    </UserProvider>
   );
-}
+};
 
 export default Home;
