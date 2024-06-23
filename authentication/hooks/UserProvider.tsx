@@ -1,11 +1,11 @@
-import React, { createContext, useContext, ReactNode } from 'react';
-import { useUser } from '@auth0/nextjs-auth0/client';
+import { createContext, useContext, ReactNode } from 'react';
+import { useUser, UserProfile } from '@auth0/nextjs-auth0/client';
 
 interface UserContextType {
-  user: any;
-  error: any;
-  isLoading: boolean;
-}
+    user: UserProfile | null | undefined; 
+    error: Error | null | undefined;
+    isLoading: boolean;
+  }
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
