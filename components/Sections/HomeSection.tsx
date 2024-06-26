@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const HomeSection: React.FC = () => {
   return (
-    <section className="bg-pyellow-200 p-10 sm:p-20 h-screen grid md:grid-cols-2 overflow-auto items-center">
+    <section className="p-10 sm:p-20 h-screen grid md:grid-cols-2 overflow-auto items-center">
       <div>
         <h1 className="text-4xl sm:text-6xl font-bold text-pyellow-950 text-balance">
           Domina un nuevo idioma <span className="text-pyellow-600">desde casa</span>

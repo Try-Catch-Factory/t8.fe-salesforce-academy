@@ -17,10 +17,14 @@ const Home: React.FC = () => {
   return (
     <UserProvider>
       <div>
-        <Header />
-        <HomeSection />
-        <NativeTeachersSection />
-        <TotalImmersionSection />
+        <div className="background-gradient-header">
+          <Header />
+          <HomeSection />
+        </div>
+        <div className="background-gradient">
+          <NativeTeachersSection />
+          <TotalImmersionSection />
+        </div>
       </div>
     </UserProvider>
   );

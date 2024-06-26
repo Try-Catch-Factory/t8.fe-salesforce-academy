@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   const { user, isLoading } = useUserContext();
 
   return (
-    <header className="px-10 sm:px-20 pt-5 bg-pyellow-200 flex justify-between items-center text-white">
+    <header className="px-10 sm:px-20 pt-5 flex justify-between items-center text-white">
       <h1 className="text-sm sm:text-2xl font-bold text-pyellow-950">Academia XYZ</h1>
       {!isLoading && !user && <LoginButton />}
       {user && <LogoutButton />}
