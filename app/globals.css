@@ -39,3 +39,15 @@ body {
 .background-gradient-header {
   background: linear-gradient(to bottom, #DAEB48, #998888);
 }
+
+.background-gray {
+  background: #998888
+}
+
+.borderblack {
+  border-color: black !important;
+}
+
+.textgray {
+  color: #3B3F1E;
+}
