@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        taprom: ['Taprom']
+      },
       colors: {
         'pyellow': {
           '50': '#fefce8',
@@ -21,7 +25,10 @@ const config: Config = {
           '800': '#834c10',
           '900': '#703f13',
           '950': '#412007',
-        },  
+        },
+        'customGreen': '#D2E23D',
+        '16222A': '#16222A',
+        '3A6073': '#3A6073',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
