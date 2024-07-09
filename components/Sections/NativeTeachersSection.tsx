@@ -2,7 +2,7 @@
 
 const NativeTeachersSection: React.FC = () => {
   return (
-    <section className="px-10 sm:px-20 bg-pyellow-600 h-screen text-white grid md:grid-cols-2 items-center">
+    <section className="px-10 sm:px-20 h-screen text-white grid md:grid-cols-2 items-center">
       <div>
         <img
           alt="profile girl"

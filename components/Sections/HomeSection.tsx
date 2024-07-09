@@ -3,16 +3,18 @@ import { Button } from "@/components/ui/button";
 
 const HomeSection: React.FC = () => {
   return (
-    <section className="bg-pyellow-200 p-10 sm:p-20 h-screen grid md:grid-cols-2 overflow-auto items-center">
+    <section className="p-10 sm:p-20 h-screen grid md:grid-cols-2 overflow-auto items-center">
       <div>
-        <h1 className="text-4xl sm:text-6xl font-bold text-pyellow-950 text-balance">
-          Domina un nuevo idioma <span className="text-pyellow-600">desde casa</span>
+        <h1 className="text-4xl sm:text-6xl font-bold text-black text-balance">
+          Domina un nuevo idioma <span className="textgray">desde casa</span>
         </h1>
         <br />
-        <p className="text-xl sm:text-3xl text-black">Aprender un nuevo idioma nunca ha sido tan fácil y a tu propio ritmo.</p>
+        <br />
+        <br />
+        <p className="text-xl sm:text-3xl text-black">Aprende idiomas de manera efectiva, a tu propio ritmo.</p>
         <br />
         <div className="flex justify-center">
-          <Button className="text-sm sm:text-xl">Explora</Button>
+          
         </div>
       </div>
       <div className="flex justify-end">
